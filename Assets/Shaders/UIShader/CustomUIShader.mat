@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CustomUIShader
+  m_Shader: {fileID: 4800000, guid: ea0e7a6551838ef4a9c5b95891f9d021, type: 3}
+  m_ShaderKeywords: DISTORT_ON EFFECT_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DistortTex:
+        m_Texture: {fileID: 2800000, guid: 63d8338f5e10d6f4f9b48d751a2c9f2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EffectMask:
+        m_Texture: {fileID: 2800000, guid: eb2af149a1743dd4bae59ee9cc18600d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EffectTex:
+        m_Texture: {fileID: 2800000, guid: 6b2910686f14f5844bf4707db2d5e2ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _CullMode: 0
+    - _DistortPower: 35.97
+    - _DistortSpeedX: 0.5
+    - _DistortSpeedY: 0.5
+    - _DstBlend: 10
+    - _EffectPowerB: 1
+    - _EffectPowerG: 1
+    - _EffectPowerR: 1
+    - _SrcBlend: 5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _UseDistort: 1
+    - _UseEffect: 1
+    - _UseUIAlphaClip: 0
+    m_Colors:
+    - _EffectColorB: {r: 0, g: 0.14020586, b: 1, a: 1}
+    - _EffectColorG: {r: 0, g: 1, b: 0.014518023, a: 1}
+    - _EffectColorR: {r: 1, g: 0, b: 0, a: 1}
+    - _TilingSpeedB: {r: 10, g: 10, b: 0, a: 1}
+    - _TilingSpeedG: {r: 10, g: 10, b: 1, a: 0}
+    - _TilingSpeedR: {r: 10, g: 10, b: 1, a: 1}
+  m_BuildTextureStacks: []

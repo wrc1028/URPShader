@@ -1,0 +1,14 @@
+﻿#pragma kernel CSMain
+
+int _Height;
+Texture2D<float4> _RenderTexture;
+RWStructuredBuffer<float> Result;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    uint width, height;
+    _RenderTexture.GetDimensions(width, height);
+    int index = id.x + id.y * width;
+    Result[index] = pow(_RenderTexture[id.xy].g, 1.0 / 1.0) * 100;
+}
